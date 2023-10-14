@@ -1,0 +1,51 @@
+<body>
+    <table border="1">
+    <div>
+    <tr>
+        <th><a href="Home.html">Home</a>&emsp;</th>
+        <th><a href="Gallery.html"> Gallery</a>&emsp;</th>
+        <th><a href="About_Me.html"> About Me</a>&emsp;</th>
+        <th><a href="contact.html"> Contact</a>&emsp;</th>
+    </tr>
+    </div>
+    </table>
+</body>
+<body>
+    <div id="container">
+        <form action="post">
+            <table border="0">
+                <tr>
+                    <th> Name : <input type="text"></th> 
+                </tr>
+                <tr>
+                    <th> Email : <input type="text"></th>
+                </tr>
+                <tr>
+                    <th> Description : <input type="text"></th>
+                </tr>
+            </table>
+        </form>
+        <button onclick="TampilkanData()">Submit</button>
+        <div id="content"></div>
+            <div id="hasil_Name"></div>
+            <div id="hasil_Email"></div>
+            <div id="hasil_Description"></div>
+    </div>
+
+    <script type="text/javascript">
+        function TampilkanData(){
+            var Name = document.getElementById('data_Name').value;
+            var Email = document.getElementById('data_Email').value;
+            var Description = document.getElementById('data_Description').value;
+            var hasilNilai;
+            console.log(Name);
+            console.log(Email);
+            console.log(Description);
+            alert("Name "+ Name + "\nEmail : "+ Email + "\nDescription : "+ Description);
+
+            document.getElementById('hasil_Name').Name;
+            document.getElementById('hasil_Email').Email;
+            document.getElementById('hasil_Description').Description;
+        }    
+         </script>
+    </body>
